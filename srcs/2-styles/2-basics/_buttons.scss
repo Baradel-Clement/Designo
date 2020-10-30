@@ -1,0 +1,26 @@
+.button {
+    width: 152px;
+    height: 56px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.light-button {
+    background-color:$white;
+    color: $black;
+}
+
+.light-button:hover, .dark-button:hover {
+    color:$white;
+    background-color: $light-peach;
+}
+
+.dark-button {
+    background-color: $peach;
+    color: $white;
+}

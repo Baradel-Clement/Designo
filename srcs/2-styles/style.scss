@@ -1,0 +1,23 @@
+// 1 - HELPERS
+@import "./1-helpers/variables";
+@import "./1-helpers/base";
+@import "./1-helpers/mixins";
+@import "./1-helpers/placeholder";
+
+// 2 - BASICS
+@import "./2-basics/buttons";
+@import "./2-basics/typography";
+
+// 3 - LAYOUT
+@import "./3-layout/navbar";
+@import "./3-layout/main-container";
+@import "./3-layout/footer";
+
+// 4 - PAGES
+@import "./4-pages/index";
+@import "./4-pages/web-design";
+@import "./4-pages/app-design";
+@import "./4-pages/graphic-desing";
+@import "./4-pages/about";
+@import "./4-pages/locations";
+@import "./4-pages/contact";
