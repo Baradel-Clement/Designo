@@ -1,0 +1,10 @@
+@media screen and (min-width: 1200px) {
+    .designs-leaf::before {
+        content: '';
+        @include absolute-el(126px, unset, unset, -164px);
+        width: 1006px;
+        height: 594px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+    }
+}

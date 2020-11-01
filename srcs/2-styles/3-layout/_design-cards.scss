@@ -1,0 +1,157 @@
+.design-cards {
+    width: 100%;
+    height: 988px;
+    @include flex(flex, row wrap, space-between, center);
+    margin-top: 160px;
+    position: relative;
+}
+
+.design-card {
+    width: 350px;
+    height: 478px;
+    @include flex(flex, column, flex-start, center);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.design-card.active {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+
+.design-card > img {
+    width: 100%;
+    height: 320px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    pointer-events: none;
+}
+
+.design-card-desc {
+    width: 100%;
+    height: 158px;
+    @include flex(flex, column, space-between, center);
+    text-align: center;
+    padding: 32px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: rgba(253, 243, 240, 1);
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.design-card-desc.active {
+    background: $peach;
+    transition: 0.2s ease-in-out;
+}
+
+.design-card-desc > h3.active {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.design-card-desc > p {
+    font-weight: 400;
+}
+.design-card-desc > p.active {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.design-last-card {
+    margin-right: 381px;
+}
+
+@media screen and (max-width: 1200px) {
+    .design-cards {
+        width: 689px;
+        height: 2030px;
+        @include flex(flex, column nowrap, space-between, center);
+        margin-top: 120px;
+    }
+
+    .design-app-cards {
+        height: 1688px;
+    }
+    
+    .design-card {
+        width: 689px;
+        height: 310px;
+        @include flex(flex, row, flex-start, center);
+    }
+    
+    .design-card > img {
+        width: 339px;
+        height: 310px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 15px;
+    }
+    
+    .design-card-desc {
+        width: 350px;
+        height: 100%;
+        padding: 109px 41px 108px 32px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 15px;
+    }
+
+    .design-last-card {
+        margin-right: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .design-cards {
+        width: 327px;
+        height: 3068px;
+        @include flex(flex, column nowrap, space-between, center);
+        margin-top: 96px;
+    }
+
+    .design-app-cards {
+        height: 2550px;
+    }
+    
+    .design-card {
+        width: 327px;
+        height: 478px;
+        @include flex(flex, column, flex-start, center);
+    }
+    
+    .design-card > img {
+        width: 100%;
+        height: 320px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: unset;
+    }
+    
+    .design-card-desc {
+        width: 100%;
+        height: 158px;
+        padding: 32px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: unset;
+    }
+    
+    .design-card-desc.active {
+        background: $peach;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .design-card-desc > h3.active {
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .design-card-desc > p {
+        font-weight: 400;
+    }
+    .design-card-desc > p.active {
+        color: white;
+        transition: 0.2s ease-in-out;
+    }
+}

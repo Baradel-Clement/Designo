@@ -7,11 +7,18 @@
 // 2 - BASICS
 @import "./2-basics/buttons";
 @import "./2-basics/typography";
+@import "./2-basics/social-icon";
+@import "./2-basics/circle";
 
 // 3 - LAYOUT
 @import "./3-layout/navbar";
 @import "./3-layout/main-container";
+@import './3-layout/hero';
 @import "./3-layout/footer";
+@import "./3-layout/view-design";
+@import "./3-layout/talk-about";
+@import './3-layout/design-banner';
+@import './3-layout/design-cards';
 
 // 4 - PAGES
 @import "./4-pages/index";
@@ -21,3 +28,4 @@
 @import "./4-pages/about";
 @import "./4-pages/locations";
 @import "./4-pages/contact";
+@import "./4-pages/designs";

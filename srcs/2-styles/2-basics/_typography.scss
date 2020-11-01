@@ -20,6 +20,11 @@ h1 {
     line-height: 48px;
 }
 
+h1.little-h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
 h2 {
     font-size: 40px;
     line-height: 48px;
@@ -38,8 +43,34 @@ h4 {
     letter-spacing: 5px;
 }
 
+.nav-links {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+
+.nav-links-mobile {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
 .black {
     color: $dark-grey;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.peach {
+    color: $peach;
+}
+
+.opacity05 {
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,5 +88,10 @@ h4 {
         font-size: 28px;
         line-height: 36px;
         letter-spacing: 1.399999976158142px;
+    }
+
+    h1.little-h1 {
+        font-size: 32px;
+        line-height: 36px;
     }
 }

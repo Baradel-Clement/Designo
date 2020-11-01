@@ -1,13 +1,14 @@
 .button {
     width: 152px;
     height: 56px;
-    text-align: center;
+    @extend %flex-center-center;
     border-radius: 8px;
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
 }
 
 .light-button {
@@ -18,6 +19,7 @@
 .light-button:hover, .dark-button:hover {
     color:$white;
     background-color: $light-peach;
+    transition: 0.2s ease-in-out;
 }
 
 .dark-button {

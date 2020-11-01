@@ -92,6 +92,12 @@ video {
   box-sizing: border-box;
 }
 
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
