@@ -43,6 +43,21 @@ h4 {
     letter-spacing: 5px;
 }
 
+input, textarea {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 1;    
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.5;
+    color: white;
+}
+
 .nav-links {
     font-size: 14px;
     font-weight: 400;
@@ -71,6 +86,10 @@ h4 {
 
 .opacity05 {
     opacity: 0.5;
+}
+
+.italic {
+    font-style: italic;
 }
 
 @media screen and (max-width: 768px) {

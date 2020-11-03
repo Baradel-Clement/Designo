@@ -1,0 +1,245 @@
+.contact-us {
+    width: 100%;
+    height: 480px;
+    @include flex(flex, row, space-between, center);
+    background-color: $peach;
+    border-radius: 15px;
+}
+
+.contact-us-text {
+    width: 635px;
+    height: 480px;
+    @include flex(flex, row, flex-end, center);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-us-text::before {
+    content: '';
+    width: 640px;
+    height: 640px;
+    background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+    @include absolute-el(unset, 0px, 0px, unset);
+    z-index: 1;
+}
+
+.contact-us-text-wrap {
+    width: 540px;
+    height: 184px;
+    @include flex(flex, column, space-between, flex-start);
+    position: relative;
+    z-index: 2;
+}
+
+.contact-us-text-wrap > p {
+    width: 445px;
+    font-weight: 400;
+}
+
+.contact-us-form {
+    width: 474px;
+    height: 480px;
+    @include flex(flex, row, flex-start, flex-start);
+}
+
+#contact-form {
+    width: 380px;
+    height: 379px;
+    margin-top: 55px;
+    @include flex(flex, column, flex-start, flex-end);
+    position: relative;
+}
+
+.form-item {
+    width: 380px;
+    height: 49px;
+    position: relative;
+}
+
+.form-item:not(:first-child) {
+    margin-top: 25px;
+}
+
+.form-item:last-child {
+    height: 102px;
+}
+
+label {
+    display: none;
+}
+
+input, textarea {
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 15px;
+    resize: none;
+    z-index: 2;
+}
+
+input:focus {
+    border-bottom: 3px solid white;
+}
+
+.form-item > p {
+    text-align: right;
+    padding-right: 36px;
+    position: relative;
+    font-weight: 400;
+    z-index: 1;
+    display: none;
+}
+.form-item > p.active {
+    display: block;
+}
+
+.form-item > p::after {
+    content: '';
+    @include absolute-el(unset, 8px, unset, unset);
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/contact/desktop/icon-error.svg);
+}
+
+#contact-form > button {
+    @include absolute-el(unset, 0px, 0px, unset);
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-us {
+        height: 711px;
+        @include flex(flex, column, space-between, center);
+        overflow: hidden;
+    }
+    
+    .contact-us-text {
+        width: 100%;
+        height: 269px;
+        @include flex(flex, row, center, flex-start);
+        overflow: visible;
+    }
+    
+    .contact-us-text::before {
+        @include absolute-el(-103px, unset, unset, -121px);
+    }
+    
+    .contact-us-text-wrap {
+        width: 573px;
+        height: 158px;
+        @include flex(flex, column, space-between, flex-start);
+        margin-top: 71px;
+    }
+    
+    .contact-us-text-wrap > p {
+        width: 100%;
+    }
+    
+    .contact-us-form {
+        width: 100%;
+        height: 442px;
+        @include flex(flex, row, center, flex-start);
+    }
+    
+    #contact-form {
+        width: 573px;
+        height: 371px;
+        margin-top: 0px;
+    }
+    
+    .form-item {
+        width: 100%;
+        height: 38px;
+    }
+    
+    input, textarea {
+        border-bottom: 1px solid white;
+    }
+
+    input {
+        height: 38px;
+    }
+    
+    input:focus {
+        border-bottom: 3px solid white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us {
+        height: 764px;
+        border-radius: 0px;
+    }
+    
+    .contact-us-text {
+        width: 100%;
+        height: 305px;
+        @include flex(flex, column, flex-start, center);
+    }
+    
+    .contact-us-text::after {
+        content: '';
+        width: 292px;
+        height: 292px;
+        background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+        @include absolute-el(0px, -90px, unset, unset);
+        z-index: 1;
+    }
+
+    .contact-us-text::before {
+        width: 292px;
+        height: 292px;
+        background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+        @include absolute-el(0px, unset, unset, -90px);
+    }
+    
+    .contact-us-text-wrap {
+        width: 100%;
+        max-width: 327px;
+        height: 185px;
+        @include flex(flex, column, space-between, center);
+        text-align: center;
+    }
+    
+    .contact-us-text-wrap > p {
+        width: 100%;
+        height: 125px;
+        font-weight: 400;
+    }
+    
+    .contact-us-form {
+        width: 100%;
+        height: 431px;
+        @include flex(flex, row, center, center);
+    }
+    
+    #contact-form {
+        width: 86.4%;
+        height: 410px;
+        margin-top: 0px;
+        @include flex(flex, column, flex-start, center);
+    }
+    
+    .form-item {
+        width: 100%;
+        height: 26px;
+    }
+    
+    .form-item:not(:first-child) {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-leaf::after {
+        content: '';
+        @include absolute-el(unset, -166px, -72px, unset);
+        width: 1006px;
+        height: 341px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+    }
+}

@@ -8,6 +8,137 @@
     <title>Contact</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/index.html">
+                <img src="/assets/shared/desktop/logo-dark.png" alt="logo-dark">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="/srcs/3-pages/about.html" class="black nav-links">OUR COMPANY</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="/srcs/3-pages/locations.html" class="black nav-links">LOCATIONS</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="/srcs/3-pages/contact.html" class="black nav-links">CONTACT</a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="mobile-white-background"></div>
+            <div class="mobile-nav-block">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list-item">
+                        <a href="/srcs/3-pages/about.html" class="nav-links-mobile">OUR COMPANY</a>
+                    </li>
+                    <li class="mobile-nav-list-item">
+                        <a href="/srcs/3-pages/locations.html" class="nav-links-mobile">LOCATIONS</a>
+                    </li>
+                    <li class="mobile-nav-list-item">
+                        <a href="/srcs/3-pages/contact.html" class="nav-links-mobile">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container contact-leaf">
+            <div class="contact-us">
+                <div class="contact-us-text">
+                    <div class="contact-us-text-wrap">
+                        <h1>Contact Us</h1>
+                        <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+                    </div>
+                </div>
+                <div class="contact-us-form">
+                    <form action="contact.html" id="contact-form">
+                        <div class="form-item">
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Name">
+                            <p class="italic">Can't be empty</p>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="Email Adress">
+                            <p class="italic">Email invalid</p>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="Phone"></label>
+                            <input type="text" id="phone" placeholder="Phone">
+                            <p class="italic">Can't be empty</p>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="textarea"></label>
+                            <textarea placeholder="Your Message" name="Message" id="message" cols="3" rows="3"></textarea>
+                            <p class="italic">Can't be empty</p>
+                        </div>
+                        <button class="button light-button" id="submit" type="submit" form="contact-form">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="see-locations">
+                <div class="see-location">
+                    <img src="/assets/shared/desktop/illustration-canada.svg" alt="illustration-canada">
+                    <h3 class="black">CANADA</h3>
+                    <a href="/srcs/3-pages/locations.html" class="button dark-button">SEE LOCATION</a>
+                </div>
+                <div class="see-location">
+                    <img src="/assets/shared/desktop/illustration-australia.svg" alt="illustration-australia">
+                    <h3 class="black">AUSTRALIA</h3>
+                    <a href="/srcs/3-pages/locations.html" class="button dark-button">SEE LOCATION</a>
+                </div>
+                <div class="see-location">
+                    <img src="/assets/shared/desktop/illustration-united-kingdom.svg" alt="illustration-united-kingdom">
+                    <h3 class="black">UNITED KINGDOM</h3>
+                    <a href="/srcs/3-pages/locations.html" class="button dark-button">SEE LOCATION</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-nav">
+                <a href="/index.html">
+                    <img src="/assets/shared/desktop/logo-light.png" alt="logo-light">
+                </a>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-item">
+                        <a href="/srcs/3-pages/about.html" class="nav-links white">OUR COMPANY</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a href="/srcs/3-pages/locations.html" class="nav-links white">LOCATIONS</a>
+                    </li>
+                    <li class="footer-nav-list-item">
+                        <a href="/srcs/3-pages/contact.html" class="nav-links white">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-details">
+                <div class="footer-details-location">
+                    <p class="bold opacity05">Designo Central Office</p>
+                    <p class="opacity05">3886 Wellington Street</p>
+                    <p class="opacity05">Toronto, Ontario M9C 3J5</p>
+                </div>
+                <div class="footer-details-contact">
+                    <p class="bold opacity05">Contact Us (Central Office)</p>
+                    <p class="bold opacity05">P : +1 253-863-8967</p>
+                    <p class="bold opacity05">M : contact@designo.co</p>
+                </div>
+                <div class="footer-details-social">
+                    <span class="social-icon social-icon-facebook"></span>
+                    <span class="social-icon social-icon-youtube"></span>
+                    <span class="social-icon social-icon-twitter"></span>
+                    <span class="social-icon social-icon-pinterest"></span>
+                    <span class="social-icon social-icon-insta"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="/srcs/1-scripts/app.js"></script>
 </body>
 </html>

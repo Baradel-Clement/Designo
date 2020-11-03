@@ -4,7 +4,7 @@ header {
     @include flex(flex, row, center, center);
     position: relative;
     background-color: white;
-    z-index: 1;
+    z-index: 3;
 }
 
 nav {
@@ -15,7 +15,7 @@ nav {
     z-index: 3;
 }
 
-nav > img {
+nav > a, nav > a > img {
     width: 196px;
     height: 24px;
     position: relative;
@@ -72,7 +72,7 @@ nav > img {
         @include flex(flex, row, space-between, center);
     }
     
-    nav > img {
+    nav > a {
         height: 27px;
         margin-left: 24px;
     }

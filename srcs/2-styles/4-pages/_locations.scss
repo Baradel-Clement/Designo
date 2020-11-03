@@ -1,0 +1,180 @@
+.locations {
+    width: 100%;
+    height: 1042px;
+    @include flex(flex, column, space-between, center);
+}
+
+.location {
+    width: 100%;
+    height: 326px;
+    @include flex(flex, row, space-between, center);
+    position: relative;
+}
+
+.location:nth-child(2) {
+    @include flex(flex, row-reverse, space-between, center);
+}
+
+.location-image {
+    width: 350px;
+    height: 326px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.location:first-child > .location-image {
+    background-image: url(/assets/locations/desktop/image-map-canada.png);
+}
+
+.location:nth-child(2) > .location-image {
+    background-image: url(/assets/locations/desktop/image-map-australia.png);
+}
+
+.location:last-child > .location-image {
+    background-image: url(/assets/locations/desktop/image-map-united-kingdom.png);
+}
+
+.location-desc {
+    width: 730px;
+    height: 326px;
+    @include flex(flex, column, space-between, flex-start);
+    background-color: rgba(253, 243, 240, 1);
+    padding: 88px 95px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-desc-detail {
+    width: 541px;
+    height: 78px;
+    @include flex(flex, row, space-between, center);
+}
+
+.designo-office, .location-contact {
+    width: 255px;
+    height: 78px;
+    @include flex(flex, column, space-between, flex-start)
+}
+
+.location-circle-one {
+    opacity: 0.06;
+    background: conic-gradient(from 90deg at 50% 50%, rgba(93, 2, 2, 0.0001) 0deg, rgba(93, 2, 2, 0.497569) 360deg);
+    bottom: 292px;
+    left: 0px;
+}
+
+.location-circle-two {
+    opacity: 0.06;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+}
+
+.location-circle-three {
+    opacity: 0.06;
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+    bottom: 0px;
+    left: 292px;
+}
+
+@media screen and (max-width: 1200px) {
+    .locations {
+        width: 689px;
+        height: 2275px;
+    }
+    
+    .location {
+        height: 683px;
+        @include flex(flex, column-reverse, space-between, center);
+    }
+    
+    .location:nth-child(2) {
+        @include flex(flex, column, space-between, center);
+    }
+    
+    .location-image {
+        width: 100%;
+    }
+    
+    .location:first-child > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-canada.png);
+    }
+    
+    .location:nth-child(2) > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-australia.png);
+    }
+    
+    .location:last-child > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-uk.png);
+    }
+    
+    .location-desc {
+        padding: 88px 75px;
+    }
+    
+    .location-desc-detail {
+        width: 541px;
+        height: 78px;
+        @include flex(flex, row, space-between, center);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .locations {
+        width: 100%;
+        height: 2222px;
+    }
+    
+    .location {
+        height: 714px;
+        @include flex(flex, column, space-between, center);
+    }
+    
+    .location:nth-child(2) {
+        @include flex(flex, column, space-between, center);
+    }
+    
+    .location-image {
+        width: 100%;
+        height: 320px;
+        border-radius: 0px;
+    }
+    
+    .location:first-child > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-canada.png);
+    }
+    
+    .location:nth-child(2) > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-australia.png);
+    }
+    
+    .location:last-child > .location-image {
+        background-image: url(/assets/locations/tablet/image-map-uk.png);
+    }
+    
+    .location-desc {
+        width: 100%;
+        height: 394px;
+        padding: 80px 24px;
+        border-radius: 0px;
+        @include flex(flex, column, space-between, center);
+    }
+
+    .location-desc > h2 {
+        margin-bottom: 24px;
+    }
+    
+    .location-desc-detail {
+        width: 100%;
+        height: 234px;
+        @include flex(flex, column, space-between, center);
+    }
+    
+    .location-designo-office, .location-contact {
+        width: 327px;
+        height: 75px;
+        @include flex(flex, column, space-between, center);
+        text-align: center;
+    }
+}

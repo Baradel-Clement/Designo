@@ -141,15 +141,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .home-leaf::before {
-        content: '';
-        @include absolute-el(323px, unset, unset, -164px);
-        width: 1006px;
-        height: 594px;
-        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
-        z-index: -2;
-    }
-
     .home-leaf::after {
         content: '';
         @include absolute-el(1723px, -164px, unset, unset);
@@ -159,6 +150,16 @@
         z-index: -2;
         transform: rotate(180deg);
         overflow: hidden;
+    }
+
+    .hero-leaf::before {
+        content: '';
+        @include absolute-el(323px, unset, unset, -164px);
+        width: 1006px;
+        height: 594px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+        
     }
 }
 

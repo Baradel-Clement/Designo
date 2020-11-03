@@ -4,6 +4,8 @@ footer {
     height: 393px;
     @include flex(flex, row, center, flex-start);
     margin-top: 74px;
+    position: relative;
+    z-index: 1;
 }
 
 .footer-wrap {
@@ -20,7 +22,7 @@ footer {
     position: relative;
 }
 
-.footer-nav > img {
+.footer-nav > a, .footer-nav > a > img {
     width: 202px;
     height: 27px;
 }
@@ -99,7 +101,7 @@ footer {
         @include flex(flex, column, space-between, center);
     }
     
-    .footer-nav > img {
+    .footer-nav > a, .footer-nav > a > img {
         width: 202px;
         height: 27px;
     }

@@ -340,7 +340,8 @@
     }
     
     .about-real-talent {
-        @include flex(flex, column, space-between, center)
+        @include flex(flex, column, space-between, center);
+        margin-top: 120px;
     }
     
     .about-talent-image {
@@ -408,5 +409,18 @@
     .about-real-talent-circle-three {
         left: 292px;
         bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-leaf::after {
+        content: '';
+        @include absolute-el(1625px, -553px, unset, unset);
+        width: 1006px;
+        height: 594px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+        transform: rotate(180deg);
+        overflow: hidden;
     }
 }
